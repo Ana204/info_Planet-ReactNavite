@@ -2,7 +2,7 @@ import React from 'react';
 import {Text, View,StyleSheet, Image, StatusBar, SafeAreaView, TouchableOpacity} from 'react-native';
 import {Ionicons} from '@expo/vector-icons';
 
-export default function Home() {
+export default function Home({ navigation }) {
     return (
       <SafeAreaView> 
          <StatusBar barStyle = "light-content" />
@@ -23,7 +23,9 @@ export default function Home() {
           <Ionicons name = "ios-contacts" size = {50} color = "#000"/>
         </TouchableOpacity>
 
-        <TouchableOpacity> 
+        <TouchableOpacity
+        onPress={() => navigation.navigate('Desenvolvedores')}
+        > 
           <Ionicons name = "ios-arrow-forward" size = {50} color = "#000"/>
         </TouchableOpacity>
       </View>
