@@ -5,8 +5,8 @@ import Accounts from './src/View/accounts/accounts'
 
 export default function App() {
  
-    return (
-      <Home></Home>
+    return(
+      <Home />
     );
   
 }

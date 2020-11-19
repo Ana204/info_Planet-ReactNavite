@@ -61,5 +61,8 @@ export default function Home() {
      justifyContent: 'space-between',
      marginLeft: 10,
      marginRight: 15,
+    },
+    info:{
+      
     }
   });
