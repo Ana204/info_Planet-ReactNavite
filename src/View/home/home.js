@@ -19,12 +19,14 @@ export default function Home({ navigation }) {
 
         
       <View style= {styles.arrow}> 
-      <TouchableOpacity>
+        <TouchableOpacity
+        onPress={() => navigation.navigate('Desenvolvedores')}
+        >
           <Ionicons name = "ios-contacts" size = {50} color = "#000"/>
         </TouchableOpacity>
 
         <TouchableOpacity
-        onPress={() => navigation.navigate('Desenvolvedores')}
+        onPress={() => navigation.navigate('Planetas')}
         > 
           <Ionicons name = "ios-arrow-forward" size = {50} color = "#000"/>
         </TouchableOpacity>
@@ -32,7 +34,7 @@ export default function Home({ navigation }) {
 
       <View style = {styles.info}>
         <Text>
-          ALGUMA COISA ESCRITA AQUI 
+          vdblmn dfjmvn kfjmdvn jdfv
         </Text>
       </View>
     
