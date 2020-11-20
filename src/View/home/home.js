@@ -23,7 +23,6 @@ export default function Home({ navigation }) {
       </View>
       
       <View style = {styles.informationArea}>
-      <View style = {styles.elipse}></View>
 
       <View style= {styles.arrow}> 
         <TouchableOpacity
@@ -62,22 +61,19 @@ export default function Home({ navigation }) {
       flex: 1,
     },
     InfoVideo:{
-      flex: 0.6
+      flex: 0.5
     },
     video:{
       width: '100%',
       height: '100%',
     },
-    elipse:{
-      flexDirection: "row",
-      backgroundColor: '#1c1c1c',
-      marginTop: -40,
-      borderTopRightRadius: 70,
-      borderTopLeftRadius: 70,
-      height: 40,
-    },
     informationArea:{
-      flex: 0.4
+      flex: 0.5,
+      backgroundColor: '#1c1c1c',
+      borderTopLeftRadius: 70,
+      borderTopRightRadius: 70,
+      marginTop: -80
+      
     },
     arrow:{
       fontSize: 50,
@@ -85,8 +81,9 @@ export default function Home({ navigation }) {
       alignItems: 'flex-end',
       flexDirection: 'row',
       justifyContent: 'space-between',
-      marginLeft: 10,
-      marginRight: 15,
+      marginLeft: 40,
+      marginRight: 40,
+      marginTop: 50
     },
     coment:{
       height: '80%',
