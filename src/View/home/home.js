@@ -23,8 +23,7 @@ export default function Home({ navigation }) {
       </View>
       
       <View style = {styles.informationArea}>
-      <View style = {styles.elipse}> 
-      </View>
+      <View style = {styles.elipse}></View>
 
       <View style= {styles.arrow}> 
         <TouchableOpacity
@@ -40,13 +39,15 @@ export default function Home({ navigation }) {
         </TouchableOpacity>
       </View>
 
-      <SafeAreaView style = {styles.coment}>
+      <View style = {styles.coment}>
         <View style = {styles.IntInfo} >
           <Text style = {styles.description}>
-            ALGUMA COISA ESCRITA AQUI jKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+            Seja bem vindo(a). Esse app é uma biblioteca de informações sobre diversos
+            planetas da nossa galáxia. Venha se divertir e obter conhecimento nesse incrível
+            universo!
           </Text>
         </View>
-      </SafeAreaView>
+      </View>
     
       </View>
       </SafeAreaView>
@@ -88,7 +89,7 @@ export default function Home({ navigation }) {
       marginRight: 15,
     },
     coment:{
-      height: '100%',
+      height: '80%',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center'
@@ -100,5 +101,6 @@ export default function Home({ navigation }) {
     description:{
       color: '#F2F2F2',
       fontSize: 18,
+      textAlign: 'center'
     }
   });
