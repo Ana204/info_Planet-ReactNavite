@@ -26,12 +26,14 @@ export default function Home({ navigation }) {
       <View style = {styles.elipse}></View>
 
       <View style= {styles.arrow}> 
-      <TouchableOpacity>
+        <TouchableOpacity
+        onPress={() => navigation.navigate('Desenvolvedores')}
+        >
           <Ionicons name = "ios-contacts" size = {50} color = "#fe9a2e"/>
         </TouchableOpacity>
 
         <TouchableOpacity
-        onPress={() => navigation.navigate('Desenvolvedores')}
+        onPress={() => navigation.navigate('Planetas')}
         > 
           <Ionicons name = "ios-arrow-forward" size = {50} color = "#fe9a2e"/>
         </TouchableOpacity>
