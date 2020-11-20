@@ -1,41 +1,52 @@
 import React from 'react';
+import { Video } from 'expo-av';
 import {Text, View,StyleSheet, Image, StatusBar, SafeAreaView, TouchableOpacity} from 'react-native';
 import {Ionicons} from '@expo/vector-icons';
 
 export default function Home({ navigation }) {
     return (
-      <SafeAreaView> 
+      <SafeAreaView style = {styles.area}> 
          <StatusBar barStyle = "light-content" />
-        <View>
-        <Image style={styles.img} 
+
+      <View style = {styles.InfoVideo}>
+        <Video style={styles.video} 
         source ={{
-          uri: 'https://image.freepik.com/fotos-gratis/uma-bela-galaxia-colorida-no-escuro-espaco-estrelado_181624-11597.jpg'
+          uri: 'https://denison3965.github.io/Img-planet/Mercury%20Planet%20-%2030300.mp4'
         }}
+        rate={1.0}
+        volume={1.0}
+        isMuted={false}
+        resizeMode="cover"
+        shouldPlay
+        isLooping
         />
       </View>
       
+      <View style = {styles.informationArea}>
       <View style = {styles.elipse}> 
       </View>
 
-        
       <View style= {styles.arrow}> 
       <TouchableOpacity>
-          <Ionicons name = "ios-contacts" size = {50} color = "#000"/>
+          <Ionicons name = "ios-contacts" size = {50} color = "#fe9a2e"/>
         </TouchableOpacity>
 
         <TouchableOpacity
         onPress={() => navigation.navigate('Desenvolvedores')}
         > 
-          <Ionicons name = "ios-arrow-forward" size = {50} color = "#000"/>
+          <Ionicons name = "ios-arrow-forward" size = {50} color = "#fe9a2e"/>
         </TouchableOpacity>
       </View>
 
-      <View style = {styles.info}>
-        <Text>
-          ALGUMA COISA ESCRITA AQUI 
-        </Text>
-      </View>
+      <SafeAreaView style = {styles.coment}>
+        <View style = {styles.IntInfo} >
+          <Text style = {styles.description}>
+            ALGUMA COISA ESCRITA AQUI jKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+          </Text>
+        </View>
+      </SafeAreaView>
     
+      </View>
       </SafeAreaView>
 
     );
@@ -43,28 +54,49 @@ export default function Home({ navigation }) {
  
 
   const styles = StyleSheet.create({
-    img:{
-      width: 450,
-      height: 450,
+    area:{
+      backgroundColor: '#1c1c1c',
+      flex: 1,
+    },
+    InfoVideo:{
+      flex: 0.6
+    },
+    video:{
+      width: '100%',
+      height: '100%',
     },
     elipse:{
       flexDirection: "row",
-      backgroundColor: '#FFF',
+      backgroundColor: '#1c1c1c',
       marginTop: -40,
       borderTopRightRadius: 70,
       borderTopLeftRadius: 70,
       height: 40,
+    },
+    informationArea:{
+      flex: 0.4
     },
     arrow:{
       fontSize: 50,
       color: '#000',
       alignItems: 'flex-end',
       flexDirection: 'row',
-     justifyContent: 'space-between',
-     marginLeft: 10,
-     marginRight: 15,
+      justifyContent: 'space-between',
+      marginLeft: 10,
+      marginRight: 15,
     },
-    info:{
-      
+    coment:{
+      height: '100%',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center'
+    },
+    IntInfo:{
+      marginLeft: 10,
+      marginRight: 10,
+    },
+    description:{
+      color: '#F2F2F2',
+      fontSize: 18,
     }
   });
