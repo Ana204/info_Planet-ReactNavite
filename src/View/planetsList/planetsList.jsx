@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {View, Text, StyleSheet, Image, SafeAreaView, ScrollView, ImageBackground} from 'react-native'
 import { color } from 'react-native-reanimated'
+import axios from 'axios'
 
 import PlanetBox from '../../components/planetBox'
 
 export default function planetsList () {
+
+    const [planets, setPlanets] = useState([])
+    console.log(planets)
+
+    useEffect(() => {
+        axios.get('http://localhost:3001/planet/')
+            .then((res) => {
+                setPlanets(res.data)
+            })
+    }, [])
     return (
         <SafeAreaView style={styles.container}>
            {/* <Image source={{uri: "https://denison3965.github.io/Img-planet/stars.png"}} style={styles.bcStars}></Image> */}
@@ -14,9 +25,10 @@ export default function planetsList () {
            >
                 <View style={styles.containerInter}>
                     <ScrollView style={styles.planets}>
-                        <PlanetBox />
-                        <PlanetBox />
-                        <PlanetBox />
+                        
+                        {planets.map((planet) => {
+                            return <PlanetBox key={planet.id} info={planet} />
+                        })}
 
                     </ScrollView>
                 </View>

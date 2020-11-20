@@ -1,13 +1,13 @@
 import React from 'react'
 import { View, Text, StyleSheet, Image } from 'react-native'
 
-export default function PlanetBox () {
+export default function PlanetBox (props) {
     return (
         <View style={styles.box}>
             <View style={styles.topArea}>
                 <View style={styles.planetImage}>
                     <Image 
-                    source={{uri : "https://denison3965.github.io/Img-planet/V%C3%AAnus.jpg"}}
+                    source={{uri : props.info.img}}
                     style={styles.planet}
                     ></Image>
                 </View>
@@ -15,7 +15,7 @@ export default function PlanetBox () {
 
                     <View style={styles.titleArea}>
                         <Text style={styles.title}>
-                            Planeta
+                            Planeta {props.info.nome}
                         </Text>
                     </View>
 
@@ -23,17 +23,17 @@ export default function PlanetBox () {
 
                         <View style={styles.itemInfoAboutPlanet}>
                             <Image source={{uri: "https://denison3965.github.io/Img-planet/galaxy.png"}} style={{width: 30, height:30}}></Image>
-                            <Text style={styles.textIcons}>Galaxy</Text>
+                            <Text style={styles.textIcons}>{props.info.galaxy}</Text>
                         </View>
 
                         <View style={styles.itemInfoAboutPlanet}>
                             <Image source={{uri: "https://denison3965.github.io/Img-planet/hot.png"}} style={{width: 30, height:30}}></Image>
-                            <Text style={styles.textIcons}>Galaxy</Text>
+                            <Text style={styles.textIcons}>{props.info.temp}</Text>
                         </View>
 
                         <View style={styles.itemInfoAboutPlanet}>
                             <Image source={{uri: "https://denison3965.github.io/Img-planet/gravidade.png"}} style={{width: 30, height:30}}></Image>
-                            <Text style={styles.textIcons}>Galaxy</Text>
+                            <Text style={styles.textIcons}>Gravidade</Text>
                         </View>
 
                     </View>
@@ -42,7 +42,7 @@ export default function PlanetBox () {
             <View style={styles.bottomArea}>
                 <View style={styles.planetDescription}>
                     <Image source={{uri: "https://denison3965.github.io/Img-planet/info.png"}} style={{width: 27, height:27, marginLeft: 10}}></Image>
-                    <Text style={styles.textDescription}>Desecricao  </Text>  
+                    <Text style={styles.textDescription}>{props.info.description}  </Text>  
                 </View>
             </View>
         </View>
@@ -75,19 +75,21 @@ const styles = StyleSheet.create({
         width: '50%',
         height: '100%',
         display: 'flex',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        marginLeft: '10%'
 
     },
     planet : {
-        width: '90%',
-        height: '70%',
-        marginTop: 30
+        width: 200,
+        height: 200,
+        margin: 'auto ' 
     },
     bottomArea: {
 
     },
     planetDescription: {
         flexDirection: 'row',
+        marginLeft: '10%'
     },
     infoAboutPlanet: {
 
