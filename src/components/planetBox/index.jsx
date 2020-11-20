@@ -2,6 +2,13 @@ import React from 'react'
 import { View, Text, StyleSheet, Image } from 'react-native'
 
 export default function PlanetBox (props) {
+
+    let description = props.info.description
+
+    if(description.length > 100) {
+        description = description.substring(0,100) + '...'
+    }
+
     return (
         <View style={styles.box}>
             <View style={styles.topArea}>
@@ -15,7 +22,7 @@ export default function PlanetBox (props) {
 
                     <View style={styles.titleArea}>
                         <Text style={styles.title}>
-                            Planeta {props.info.nome}
+                            {props.info.nome}
                         </Text>
                     </View>
 
@@ -33,7 +40,7 @@ export default function PlanetBox (props) {
 
                         <View style={styles.itemInfoAboutPlanet}>
                             <Image source={{uri: "https://denison3965.github.io/Img-planet/gravidade.png"}} style={{width: 30, height:30}}></Image>
-                            <Text style={styles.textIcons}>Gravidade</Text>
+                            <Text style={styles.textIcons}>{props.info.gravity}</Text>
                         </View>
 
                     </View>
@@ -42,7 +49,7 @@ export default function PlanetBox (props) {
             <View style={styles.bottomArea}>
                 <View style={styles.planetDescription}>
                     <Image source={{uri: "https://denison3965.github.io/Img-planet/info.png"}} style={{width: 27, height:27, marginLeft: 10}}></Image>
-                    <Text style={styles.textDescription}>{props.info.description}  </Text>  
+                    <Text style={styles.textDescription}>{description}  </Text>  
                 </View>
             </View>
         </View>

@@ -11,28 +11,28 @@ export default function Acconts() {
             Contatos
         </Text>
 
-        <Text style={{width: 370, height: 75, marginTop: 10 ,marginBottom: 20, backgroundColor: 'powderblue'}}>
-            Guilherme
+        <Text style={{width: 370, height: 75, marginTop: 10 ,marginBottom: 20, backgroundColor: 'powderblue', textAlign: 'center', lineHeight: 75, fontSize: 20}}>
+            Guilherme Mendes
         </Text>
         
-        <Text style={{width: 370, height: 75, marginBottom: 20, backgroundColor: 'powderblue'}}>
-            Ana
+        <Text style={{width: 370, height: 75, marginBottom: 20, backgroundColor: 'powderblue',textAlign: 'center', lineHeight: 75, fontSize: 20}}>
+            Ana Gomes
         </Text>
 
-        <Text style={{width: 370, height: 75, marginBottom: 20, backgroundColor: 'powderblue'}}>
-            Felipe
+        <Text style={{width: 370, height: 75, marginBottom: 20, backgroundColor: 'powderblue',textAlign: 'center', lineHeight: 75, fontSize: 20}}>
+            Felipe Braga
         </Text>
 
-        <Text style={{width: 370, height: 75, marginBottom: 20, backgroundColor: 'powderblue'}}>
-            Caio
+        <Text style={{width: 370, height: 75, marginBottom: 20, backgroundColor: 'powderblue',textAlign: 'center', lineHeight: 75, fontSize: 20}}>
+            Caio Daniel
         </Text>
 
-        <Text style={{width: 370, height: 75, marginBottom: 20, backgroundColor: 'powderblue'}}>
-            Jason
+        <Text style={{width: 370, height: 75, marginBottom: 20, backgroundColor: 'powderblue',textAlign: 'center', lineHeight: 75, fontSize: 20}}>
+            Jason Volney
         </Text>
 
-        <Text style={{width: 370, height: 75, marginBottom: 20, backgroundColor: 'powderblue'}}>
-            Denison
+        <Text style={{width: 370, height: 75, marginBottom: 20, backgroundColor: 'powderblue',textAlign: 'center', lineHeight: 75, fontSize: 20}}>
+            Denison Portela
         </Text>
 
       </View>
