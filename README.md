@@ -19,4 +19,24 @@
   To run this app you need the expo and other dependence, for that, you need to execute this command to install all dependency necessary to run app#
   
   ### `npm install` or `yarn add`
+  
+  **IMPORTANT !!!!** - After all, you need to run the **planet API** sad above, for this application to be able to get the planets and lists
+  
+  The next step is execute the aplication with this command bellow, in the VisualCode terminal:
+  
+  ### `expo start`
+  
+  Here we are running expo, which will open a tab in the terminal giving us as options to see the project running, either on the web, emulator, or physical device with QR code
+  
+  ### Devs
+
+  - Ana Lucia Ferreira Gome [GitHub](https://github.com/Ana204)
+  - Denison de Almeida Portela [GitHub](https://github.com/denison3965)
+  - Caio Daniel Pinto de Lima [GitHub](https://github.com/caiodanielp)
+  - Felipe Braga Duarte [GitHub](https://github.com/obragaa)
+  - Guilherme Cunha Mendes [GitHub](https://github.com/firgo12)
+  
+  
+  
+  
 
