@@ -1,4 +1,4 @@
-# info_Planet-ReactNavite
+# 🪐 info_Planet-ReactNavite 🪐
 ![Preview-Screens](https://github.com/Ana204/info_Planet-ReactNavite/blob/Master/Screenshot%20from%202020-11-22%2018-24-32.png)
 ![Preview-Screens](https://github.com/Ana204/info_Planet-ReactNavite/blob/Master/Screenshot%20from%202020-11-22%2018-24-57.png)
 ![Preview-Screens](https://github.com/Ana204/info_Planet-ReactNavite/blob/Master/Screenshot%20from%202020-11-22%2018-25-32.png)
@@ -20,7 +20,7 @@
   
   ### `npm install` or `yarn add`
   
-  **IMPORTANT !!!!** - After all, you need to run the **planet API** sad above, for this application to be able to get the planets and lists
+  **IMPORTANT 🪐 !!!!** - After all, you need to run the **planet API** sad above, for this application to be able to get the planets and lists
   
   The next step is execute the aplication with this command bellow, in the VisualCode terminal:
   
@@ -28,7 +28,7 @@
   
   Here we are running expo, which will open a tab in the terminal giving us as options to see the project running, either on the web, emulator, or physical device with QR code
   
-  ### Devs
+  ### Devs 🪐
 
   - Ana Lucia Ferreira Gome [GitHub](https://github.com/Ana204)
   - Denison de Almeida Portela [GitHub](https://github.com/denison3965)
